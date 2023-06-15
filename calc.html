@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+
+<header>
+    <img class="Logo" src="img\Black_Cat_Vector.svg.png" alt="Logo" width="100">
+    <h1>Коты и кошки</h1>
+<!-- hr рисует разделительную линию между блоками -->
+    <hr>
+    <nav>
+        <span><b><a href="index.html">Главная</a></b></span>
+        <span><b><a href="gallery.html">Галерея</a></b></span>
+<!-- target = blank - чтобы ссылка открывалась не в этом же окне, а в новой вкладке -->
+        <span><b><a target="_blank" href="https://ya.ru/">Поиск</a></b></span>
+        <span><b><a href="hello.html">Познакомимся?</a></b></span>
+        <span><b><a target="_blank" href="calc.html">Калькулятор</a></b></span>
+        <span> <input type="text" placeholder="Поиск по сайту"> </span>
+    </nav>
+    <hr>
+</header>
+
+<main>
+    <b> Не опирайтесь на вывод, почему-то код работает неверно!</b> <br>
+    <input type="text" placeholder="Ваш рост" id="rost">
+    <input type="text" placeholder="Ваш вес" id="ves">
+    <button onclick="calc()">Отправить</button><br>
+    Ваш ИМТ: <span id="result"></span>
+
+</main>
+
+<footer>
+    <u>(c) 2023, Мария Александровна </u>
+</footer>
+</body>
+</html>

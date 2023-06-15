@@ -3,76 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Мой сайт</title>
-    <style>
-        nav {
-            color: black;
-            background-color: rgb(206, 86, 0);
-            width: auto;
-            padding: 10px;
-        } 
-        nav :hover {
-            background-color: brown;
-            padding: 2px;
-        }
-        body {
-            background: url(https://gas-kvas.com/uploads/posts/2023-01/1674469903_gas-kvas-com-p-yegipetskie-uzori-i-ornamenti-risunok-32.jpg);
-        }
-        header {
-            background-color: rgb(0, 0, 0);
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-        main {
-            background-color: black;
-            padding: 10px;
-        }
-        footer {
-            background-color: black;
-            padding: 10px;
-        }
-        p, ul, ol {
-            color: white;
-        }
-        h1, h2 {
-            color: rgb(206, 86, 0);
-        }
-        h1 {
-            padding: 10px;
-        }
-        div {
-            padding: 0 20px 0 20px;
-        }
-        img {
-            outline: 3px solid rgb(206, 86, 0) ;
-        }
-        .secondText {
-            color: antiquewhite;
-        }
-        .textImg {
-            float: left;
-            margin: 20px;
-        }
-        .Logo {
-            outline: none;
-            background-color: rgb(206, 86, 0);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/app.js" defer></script>
 </head>
 
 <body>
-
 <header>
     <img class="Logo" src="img\Black_Cat_Vector.svg.png" alt="Logo" width="100">
     <h1>Коты и кошки</h1>
 <!-- hr рисует разделительную линию между блоками -->
     <hr>
     <nav>
-        <span><b>Главная</b></span>
+        <span><b><a href="index.html">Главная</a></b></span>
         <span><b><a href="gallery.html">Галерея</a></b></span>
 <!-- target = blank - чтобы ссылка открывалась не в этом же окне, а в новой вкладке -->
         <span><b><a target="_blank" href="https://ya.ru/">Поиск</a></b></span>
-        <span><b>Контакты</b></span>
+        <span><b><a href="hello.html">Познакомимся?</a></b></span>
+        <span><b><a target="_blank" href="calc.html">Калькулятор</a></b></span>
         <span> <input type="text" placeholder="Поиск по сайту"> </span>
     </nav>
     <hr>
@@ -90,7 +37,7 @@
     </p>
 <!-- div - расположение элментов сверху вниз, а span - меню в ширь как бы -->
     <p class="secondText">
-        <img class="textImg" src="img\koshka.jpg" alt="Красивый кот" width="350"> 
+        <img class="textImg" src="img/koshka.jpg" alt="Красивый кот" width="350"> 
         <!-- <img class="textImg" src="img\and.jpg" alt="Красивый кот" width="300"><br> -->
         На особое место кошек в ряду животных, почитаемых Египтянами, обращал внимание ещё древний грек Геродот (ок. 484 — ок. 425 до н. э.). «Отец истории» писал в своей «Евтерпе»:
         Хотя у египтян много домашних животных, но их было бы ещё гораздо больше, если бы с кошками не происходило вот какого странного явления. Всякий раз, как у кошек появляются на свет котята, они уже больше не идут к котам, а те, желая с ними спариться, не находят их. Поэтому коты прибегают к такой хитрости: они силой похищают котят у кошек, умерщвляют их, но не пожирают. А кошки, лишившись своих котят и желая снова иметь других, приходят тогда к котам. Ведь это животное любит детёнышей. Во время пожара с кошками творится что‑то удивительное. Египтяне не заботятся о тушении огня, а оцепляют горящее пространство и стерегут кошек, а те всё же успевают проскользнуть между людей и, перескочив через них, бросаются в огонь. Это повергает египтян в великое горе. Если в доме околеет кошка, то все обитатели дома сбривают себе только брови. Если же околевает собака, то все стригут себе волосы на теле и на голове. Трупы кошек отвозят в город Бубастис, бальзамируют и погребают там в священных покоях. Собак же хоронят каждый в своём городе в священных гробницах
@@ -106,11 +53,14 @@
     </p>
     <p>
         <b>А какие породы кошек знаете вы?</b> <br>
-        <input type="text" placeholder="Напишите свой вариант">
-        <button>Отправить</button>
+        <input type="text" placeholder="Напишите свой вариант" id="text">
+        <button onclick="app()">Отправить</button>
         <ol>
             <li>Cибирская</li>
             <li>Британец</li>
+            <li id="message3"></li>
+            <li></li>
+
         </ol>
     </p>
 

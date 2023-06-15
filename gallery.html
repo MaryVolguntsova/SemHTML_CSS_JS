@@ -2,34 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Мой сайт
-    </title>
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
+    <img class="Logo" src="img\Black_Cat_Vector.svg.png" alt="Logo" width="100">
     <h1>Коты и кошки</h1>
 <!-- hr рисует разделительную линию между блоками -->
     <hr>
-    <h2> <i>В Древнем Египте</i></h2>
-    <p>
-        Посмотрите несколько фотографий
-    </p>
+   
+    <br>
+        <nav>
+            <span><b><a href="index.html">Главная</a></b></span>
+            <span><b><a href="gallery.html">Галерея</a></b></span>
+    <!-- target = blank - чтобы ссылка открывалась не в этом же окне, а в новой вкладке -->
+            <span><b><a target="_blank" href="https://ya.ru/">Поиск</a></b></span>
+            <span><b><a href="hello.html">Познакомимся?</a></b></span>
+            <span><b><a target="_blank" href="calc.html">Калькулятор</a></b></span>
+            <span> <input type="text" placeholder="Поиск по сайту"> </span>
+        </nav>
+        <hr>
 </header>
-<hr>
+
 <main>
-    <nav>
-        <span><b><a target="_blank" href="index.html">Главная</a></b></span>
-        <span><b>Галерея</b></span>
-<!-- target = blank - чтобы ссылка открывалась не в этом же окне, а в новой вкладке -->
-        <span><b><a target="_blank" href="https://ya.ru/">Поиск</a></b></span>
-        <span><b>Контакты</b></span>
-    </nav>
-<hr>
+    <p>
+        <h2>Посмотрите несколько фотографий</h2>
+        
+<p class="gallery">
 <!-- можно как ссылки в интернете, так и из папки -->
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sarcophagus_of_Prince_Thutmose%27s_cat_by_Madam_Rafaèle.jpg/1024px-Sarcophagus_of_Prince_Thutmose%27s_cat_by_Madam_Rafaèle.jpg" alt="Барельеф кота" width="300">
-    <img src="img\Cat,_Tomb_of_Nebamun.jpg" alt="Изображние кошки в гробнице" width="300">
-    <img src="img\beauty.jpg" alt="Изображние кошки в гробнице" width="300">
+    <img src="img/Cat,_Tomb_of_Nebamun.jpg" alt="Изображние кошки в гробнице" width="300">
+    <img src="img/beauty.jpg" alt="Изображние кошки в гробнице" width="300">
+</p>
 </main>
 <hr>
 <footer>
