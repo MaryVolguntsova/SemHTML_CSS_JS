@@ -30,9 +30,18 @@
     <input type="text" placeholder="Как вас зовут?" id="name">
     <button onclick="hi()">Отправить</button><br>
     <p>
-        <b>Приветствую Вас, <span id="res"></span></b> <br>
+        <b><span id="res"></span></b> <br>
         <b>Меня зовут Мария, я студентка GB University!</b>
     </p>
+    <p><b><h1>Чат</h1></b></p>
+    <input type="text" placeholder="Напишите сообщение" id="chat_message">
+    <button onclick="send_message()">Отправить</button><br>
+    <ol>  
+        <ol>
+        <li>Мария: Привет!</li>
+        <li>Мария: Как у тебя дела?</li>
+        <li id="message1"></li>
+    </ol>
 </main>
 
 <footer>
